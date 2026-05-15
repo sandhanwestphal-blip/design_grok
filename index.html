@@ -1,0 +1,213 @@
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandhan Westphal – Webdesign mit Essenz. Individuelle, tiefgründige und wirkungsvolle Websites aus Leipzig.">
+    <title>Sandhan Westphal | Webdesign mit Essenz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0f766e 0%, #164e63 100%);
+        }
+        
+        .portfolio-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(15 118 110 / 0.25);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-teal-700 rounded-2xl flex items-center justify-center text-white text-2xl">🌊</div>
+                <span class="text-2xl font-semibold tracking-tight heading-font">Sandhan Westphal</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#ueber" class="hover:text-teal-700 transition">Über mich</a>
+                <a href="#leistungen" class="hover:text-teal-700 transition">Leistungen</a>
+                <a href="#portfolio" class="hover:text-teal-700 transition">Portfolio</a>
+                <a href="#weg" class="hover:text-teal-700 transition">Mein Weg</a>
+                <a href="#kontakt" class="hover:text-teal-700 transition">Kontakt</a>
+            </div>
+            
+            <a href="#kontakt" class="px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white font-semibold rounded-3xl flex items-center gap-x-2 transition">
+                <i class="fa-solid fa-paper-plane"></i>
+                Projekt starten
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg text-white py-24 md:py-32">
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-white/20 px-5 py-2 rounded-3xl text-sm mb-6">
+                    <span class="animate-pulse">●</span>
+                    Leipzig • Verfügbar
+                </div>
+                <h1 class="text-5xl md:text-6xl leading-none font-bold heading-font tracking-tighter">
+                    Webdesign.<br>Mit Tiefe.<br>Mit Wirkung.
+                </h1>
+                <p class="mt-8 text-xl text-teal-100 max-w-md">
+                    Ich gestalte authentische, klare und berührende Websites – aus 40 Jahren Erfahrung in Musik, Spiritualität, Wirtschaft und IT.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#kontakt" class="px-8 py-4 bg-white text-teal-800 font-semibold rounded-3xl hover:bg-amber-50 transition flex items-center gap-x-3">
+                        Jetzt Projekt starten <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://sandhanwestphal-blip.github.io/Sandhan/" target="_blank" class="px-8 py-4 border border-white/60 hover:border-white font-medium rounded-3xl transition">
+                        Meine eigene Seite ansehen
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex justify-center">
+                <div class="w-96 h-96 bg-white/10 backdrop-blur-3xl rounded-3xl border border-white/30 flex items-center justify-center relative overflow-hidden">
+                    <div class="text-center">
+                        <div class="text-8xl mb-4">🐋</div>
+                        <div class="heading-font text-3xl">Design das verbindet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ÜBER MICH -->
+    <section id="ueber" class="max-w-screen-2xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-5">
+                <span class="text-teal-700 font-medium">MEIN WESEN</span>
+                <h2 class="text-4xl heading-font font-semibold mt-3">Ein Leben voller Synthesen</h2>
+            </div>
+            <div class="md:col-span-7 text-lg leading-relaxed text-slate-600">
+                <p class="mb-6">
+                    Ich bin Sandhan Westphal. Musiker, spiritueller Praktizierender (Osho), Unternehmer (Photovoltaik & Immobilien) und seit 2025 voller Hingabe an Beratung und Webdesign.
+                </p>
+                <p>
+                    Diese vielfältige Erfahrung fließt in jedes Projekt: Klarheit aus der Wirtschaft, Tiefe aus der Meditation, Kreativität aus der Musik und technische Präzision aus der IT.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section id="leistungen" class="bg-slate-50 py-24">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <h2 class="text-4xl heading-font font-semibold text-center mb-12">Meine Leistungen</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="text-2xl font-semibold mb-3">Individuelle Webseiten</h3>
+                    <p class="text-slate-600">Moderne, responsive Single-Page-Websites auf GitHub Pages – wartungsfrei, schnell und SEO-freundlich.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <div class="text-4xl mb-4">🧘</div>
+                    <h3 class="text-2xl font-semibold mb-3">Retreat- &amp; Coaching-Seiten</h3>
+                    <p class="text-slate-600">Emotionale, klare und verkaufsstarke Websites für Heilreisen, Beratung und spirituelle Angebote (wie die Wale-Seite).</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-2xl font-semibold mb-3">Branding &amp; Digitale Identität</h3>
+                    <p class="text-slate-600">Ganzheitliche visuelle Erscheinungsbilder – von Farben und Typografie bis zum fertigen Auftritt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="max-w-screen-2xl mx-auto px-6 py-24">
+        <h2 class="text-4xl heading-font font-semibold text-center mb-12">Realisierte Projekte</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://claudiabraune.github.io/Wale_german/" target="_blank" class="portfolio-card block bg-white border rounded-3xl overflow-hidden group">
+                <div class="aspect-video bg-gradient-to-br from-cyan-100 to-teal-200 flex items-center justify-center text-8xl">
+                    🐋
+                </div>
+                <div class="p-8">
+                    <h3 class="font-semibold text-xl">Heilreise zu den Walen – Claudia Braune</h3>
+                    <p class="text-slate-500">Spirituelle Retreat-Website mit Programm, Preisen und starker emotionaler Wirkung.</p>
+                </div>
+            </a>
+            
+            <a href="https://sandhanwestphal-blip.github.io/Sandhan/" target="_blank" class="portfolio-card block bg-white border rounded-3xl overflow-hidden group">
+                <div class="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-8xl text-white">
+                    🌀
+                </div>
+                <div class="p-8">
+                    <h3 class="font-semibold text-xl">Sandhan Westphal – Persönliche Beratungsseite</h3>
+                    <p class="text-slate-500">Biografie, Werdegang und Kontakt mit tiefer, ruhiger Ästhetik.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- MEIN WEG -->
+    <section id="weg" class="max-w-screen-2xl mx-auto px-6 py-24 bg-white">
+        <h2 class="text-4xl heading-font font-semibold text-center mb-12">Mein Weg</h2>
+        <div class="max-w-2xl mx-auto text-center text-lg text-slate-600">
+            Von der Musikhochschule über jahrelange spirituelle Praxis in Indien, Unternehmensgründung bis hin zur vollen Hingabe an Beratung und Design – ich bringe echte Lebenserfahrung in jede Website.
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="bg-slate-900 text-white py-24">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl heading-font font-semibold mb-6">Lass uns dein Projekt starten</h2>
+                    <p class="text-xl text-slate-300">Ich freue mich auf deine Vision.</p>
+                    <div class="mt-12 space-y-6">
+                        <a href="mailto:sandhan.westphal@gmx.de" class="flex items-center gap-4 group">
+                            <i class="fa-solid fa-envelope text-3xl text-teal-400"></i>
+                            <div>
+                                <div class="font-medium">sandhan.westphal@gmx.de</div>
+                                <div class="text-teal-400 text-sm">Direkt schreiben</div>
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-location-dot text-3xl text-teal-400"></i>
+                            <div>Leipzig, Deutschland</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form action="https://formspree.io/f/deine-form-id" method="POST" class="space-y-6">
+                    <input type="text" name="name" placeholder="Dein Name" required class="w-full bg-white/10 border border-white/30 rounded-2xl px-6 py-4 focus:outline-none focus:border-teal-400">
+                    <input type="email" name="email" placeholder="Deine E-Mail" required class="w-full bg-white/10 border border-white/30 rounded-2xl px-6 py-4 focus:outline-none focus:border-teal-400">
+                    <textarea name="message" rows="5" placeholder="Beschreibe kurz dein Projekt..." required class="w-full bg-white/10 border border-white/30 rounded-3xl px-6 py-4 focus:outline-none focus:border-teal-400"></textarea>
+                    <button type="submit" class="w-full py-6 bg-white text-slate-900 font-semibold rounded-3xl hover:bg-amber-100 transition">
+                        Nachricht senden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <p>© 2026 Sandhan Westphal – Webdesign mit Essenz</p>
+        <p class="mt-2">Gestaltet mit Inspiration von Walen und gelebtem Leben</p>
+    </footer>
+
+    <script>
+        // Einfaches Mobile-Menü (optional erweiterbar)
+        console.log("%c✅ Deine neue Design-Business-Website ist bereit! Speichere diesen Code als index.html und lade ihn auf GitHub hoch.", "color:#0f766e; font-size:14px");
+    </script>
+</body>
+</html>
+```
